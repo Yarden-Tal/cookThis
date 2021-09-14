@@ -1,0 +1,16 @@
+[{
+    "id": "bb5dc8842ca31d46",
+    "name": "Yarden",
+    "imageUrl": "https://img.discogs.com/ZmYvyghCL_5qJN2eVWs72KMHNXs=/600x741/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-252793-1564820941-1083.jpeg.jpg",
+    "email": "yarden@gmail.com",
+    "password": "12345678",
+    "recipes": [{
+        "id": "bb5dc2342ca31d46",
+        "name": "Shaksuka",
+        "preparation time": 25,
+        "difficulty": "easy",
+        "imageUrl": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/12/Shakshuka-19-500x500.jpg",
+        "ingredients": ["eggs", "tomatoes", "onions", "garlic", "hot peppers", "spices"],
+        "instructions": "Dice an onion and red bell pepper and add that to a sauté pan with a little olive oil on medium heat. Stir the veggies for about 5 minutes or until the onions become translucent. Then add the garlic and spices and stir for another minute until they’re nice and fragrant. Pour in a 28-ounce can of whole peeled tomatoes and use your spatula to break up the tomatoes into smaller pieces. Once this entire mixture is lightly simmering, you can crack your eggs on top."
+    }]
+}]
