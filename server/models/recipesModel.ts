@@ -1,3 +1,5 @@
+const { v4: uuidv4 } = require('uuid');
+
 export enum Difficulty {
   easy = 'easy',
   medium = 'medium',
@@ -25,7 +27,7 @@ export class Recipe {
     ingredients: Ingredients,
     instructions: string
   ) {
-    this.id = Math.random().toString(16);
+    this.id = uuidv4();
     this.name = name;
     this.prepTime = prepTime;
     this.difficulty = difficulty;
@@ -34,3 +36,5 @@ export class Recipe {
     this.instructions = instructions;
   }
 }
+
+export type Recipes = Recipe[];

@@ -1,24 +1,32 @@
-import { Recipe } from '../models/recipesModel';
+const { v4: uuidv4 } = require('uuid');
+import { Recipes } from '../models/recipesModel';
 
 export class User {
   id: string;
   name: string;
-  imageUrl: string;
   email: string;
   password: string;
-  recipes: Recipe[];
+  recipes: Recipes;
+  imageUrl?: string;
   constructor(
     name: string,
-    imageUrl: string,
     email: string,
     password: string,
-    recipes: Recipe[]
+    recipes: Recipes,
+    imageUrl?: string
   ) {
-    this.id = Math.random().toString(16);
+    this.id = uuidv4();
     this.name = name;
-    this.imageUrl = imageUrl;
     this.email = email;
     this.password = password;
     this.recipes = recipes;
+    this.imageUrl = imageUrl;
+  }
+}
+
+export class Users {
+  users: User[];
+  constructor() {
+    this.users = [];
   }
 }

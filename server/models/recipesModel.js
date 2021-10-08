@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 exports.Recipe = exports.Difficulty = void 0;
+var uuidv4 = require('uuid').v4;
 var Difficulty;
 (function (Difficulty) {
     Difficulty["easy"] = "easy";
@@ -9,7 +10,7 @@ var Difficulty;
 })(Difficulty = exports.Difficulty || (exports.Difficulty = {}));
 var Recipe = /** @class */ (function () {
     function Recipe(name, prepTime, difficulty, imageUrl, ingredients, instructions) {
-        this.id = Math.random().toString(16);
+        this.id = uuidv4();
         this.name = name;
         this.prepTime = prepTime;
         this.difficulty = difficulty;
